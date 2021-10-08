@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<version>
+	<name>DBeaver CE</name>
+	<number>1.5.7</number>
+	<date>27.09.2021</date>
+	<release-notes>
+	   V1.3.6:
+	     - DBeaver:
+                - bug fix:
+                     1. 修复DM数据库执行多表更新、删除报错的问题
+                     2. 修复执行SQL server存储过程、函数未返回执行结果的问题
+                     3. 修复Oracle表导出SQL文件BLOB类型序列化问题
+                     4. 修复导入Excel表格报错的问题，优化了导入逻辑
+                     5. 修复Kingbase删除函数、存储过程报错的问题
+                     6. Oracle增加获取序列SQL功能、触发器SQL增加Create关键字
+                     7. 修复SQLServer 索引名为特殊字符问题
+                     8. 修复SQL server获取序列最大值为负数的问题
+                - new  features:
+                     1. Oracle 模式结构以及数据备份还原支持（具体操作方式请看文档:https://fdoc.epoint.com.cn:3366/dbabook/DBeaver/）
+                     2. SQLServer 模式结构以及数据备份还原支持（具体操作方式请看文档:https://fdoc.epoint.com.cn:3366/dbabook/DBeaver/）
+                     3. 数据迁移: Oracle、MySQL ==》SQLite 支持
+        </release-notes>
+    <windows-name>
+	 DBeaver_Windows_Setup_1.3.6.exe
+    </windows-name>
+    <mac-name>
+	 DBeaver_Mac_v1.3.6.tar.gz
+    </mac-name> 
+	<base-url>https://fdoc.epoint.com.cn:3366/DBATools/DBeaver/download</base-url>
+	<locale name="ru,zh,de,fr,ja,es,ko"/>
+</version>
