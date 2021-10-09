@@ -70,7 +70,7 @@
 2. 测试数据生成器，能够自动生成测试数据并插入表中
 
 ## 二、操作文档
-新增功能的操作文档请看此处：
+新增功能的操作文档请看此处：[wiki](https://github.com/Saorionesan/DBeaver/wiki)
 
 ## 三、下载使用
 当前提供以下平台的DBeaver安装包:Windows、Linux、macos；请在此处下载[DBeaver](https://github.com/Saorionesan/DBeaver/releases)。
