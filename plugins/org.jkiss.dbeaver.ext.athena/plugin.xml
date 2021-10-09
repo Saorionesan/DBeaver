@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+
+<plugin>
+
+    <extension point="org.jkiss.dbeaver.dataSourceProvider">
+
+        <!-- Athena -->
+
+        <datasource
+                class="org.jkiss.dbeaver.ext.athena.AthenaDataSourceProvider"
+                description="%datasource.athena.description"
+                id="athena"
+                parent="generic"
+                label="Athena"
+                icon="icons/athena_icon.png"
+                dialect="aws_athena">
+            <drivers managable="true">
+
+                <!-- Simba JDBC driver -->
+                <driver
+                        id="aws_athena_jdbc_simba"
+                        label="Athena"
+                        icon="icons/athena_icon.png"
+                        iconBig="icons/athena_icon_big.png"
+                        class="com.simba.athena.jdbc.Driver"
+                        sampleURL="jdbc:athena://AWSRegion={region};"
+                        defaultPort="444"
+                        customEndpoint="true"
+                        description="%driver.athena.description"
+                        category="AWS"
+                        webURL="https://docs.aws.amazon.com/athena/latest/ug/connect-with-jdbc.html"
+                        propertiesURL="https://s3.amazonaws.com/athena-downloads/drivers/JDBC/SimbaAthenaJDBC_2.0.16.1000/docs/Simba+Athena+JDBC+Driver+Install+and+Configuration+Guide.pdf"
+                        categories="bigdata,aws">
+                    <replace provider="generic" driver="aws_athena_42"/>
+                    <file type="jar" path="https://s3.amazonaws.com/athena-downloads/drivers/JDBC/SimbaAthenaJDBC-2.0.16.1000/AthenaJDBC42.jar" bundle="!drivers.athena"/>
+                    <file type="jar" path="drivers/athena" bundle="drivers.athena"/>
+
+                    <parameter name="supports-references" value="false"/>
+                    <parameter name="supports-indexes" value="false"/>
+                    <parameter name="omit-catalog" value="true"/>
+                    <property name="@dbeaver-default-resultset.maxrows.sql" value="true"/>
+                </driver>
+
+            </drivers>
+
+        </datasource>
+    </extension>
+
+    <extension point="org.jkiss.dbeaver.sqlDialect">
+        <dialect id="aws_athena" parent="generic" class="org.jkiss.dbeaver.ext.athena.model.AthenaSQLDialect" label="Athena" description="AWS Athena dialect." icon="icons/athena_icon.png">
+        </dialect>
+    </extension>
+
+</plugin>
