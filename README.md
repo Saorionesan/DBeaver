@@ -79,6 +79,8 @@
 ## 三、下载使用
 当前提供以下平台的DBeaver安装包:Windows、Linux、macos；请在此处下载[DBeaver](https://github.com/Saorionesan/DBeaver/releases)。
 
+如果下载较慢，也可以使用百度云下载:链接：https://pan.baidu.com/s/1wm2apJ73Y3_0gwTUuJZulA 提取码：6666
+
 Windows下安装使用建议您直接下载exe安装包，exe安装包中包含了数据库备份还原组件;如果您使用zip包进行安装将无法使用数据库备份还原功能。
 
 ## 四、建议
