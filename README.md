@@ -76,7 +76,7 @@
 1. 新增MySQL binlog解析插件，可以进行binlog的解析，后续将继续支持其他插件
 
 ## 二、操作文档
-新增功能的操作文档请看此处：[wiki](https://gitee.com/surive/DBeaverRelease/wikis)
+新增功能的操作文档请看此处：[wiki](https://github.com/Saorionesan/DBeaver/wiki/DBeaver%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3)
 
 ## 三、下载使用
 当前提供以下平台的DBeaver安装包:Windows、Linux、macos。
