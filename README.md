@@ -85,8 +85,8 @@ Windows下安装使用建议您直接下载exe安装包，exe安装包中包含�
 
 **百度网盘下载地址**：
 
-链接：https://pan.baidu.com/s/1wm2apJ73Y3_0gwTUuJZulA 
-提取码：6666 
+链接：https://pan.baidu.com/s/14CRGuQrFe-K7thBNAci9uQ
+提取码：v9m5 
 
 ## 四、建议
 如果您在使用过程中有什么问题或者建议都可在Issues中提出，当然如果您觉得这个工具对您有所帮助请给一个star。
